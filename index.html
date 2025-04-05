@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hamburger menu example">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Responsive Navigation 1</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <ol class="desktop-nav">
+            <li><a href="#" class="xbtn">X</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ol>
+    </div>
+</div>
+
+        <script>
+
+            let bourgir = document.querySelector('.burger-icon');
+            let xbtn = document.querySelector('.xbtn');
+            let desktopNav = document.querySelector('.desktop-nav')
+
+            function openSidebar(){
+                if(screenX >800){
+                desktopNav.style.width = '100vw'
+            } else {
+                desktopNav.style.width = '60vw'
+            }
+        }
+
+            function closeSidebar(){
+                desktopNav.style.width = '0vw'
+        }
+
+            bourgir.addEventListener('click', openSidebar);
+            xbtn.addEventListener('click',closeSidebar);
+
+           
+        </script>
+    </div>
+</body>
+</html>
